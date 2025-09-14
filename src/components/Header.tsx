@@ -10,14 +10,16 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 
+import logo from '@/assets/logoNova.png';
+
 const Header = () => {
   return (
     <header className="sticky top-0 z-50 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-2">
-          <div className="w-8 h-8 bg-gradient-nature rounded-lg flex items-center justify-center">
-            <span className="text-white font-bold text-sm">RR</span>
+          <div className="w-8 h-8 rounded-lg flex items-center justify-center">
+            <img src={logo} alt="Logo RotaRural" className="w-full h-full object-cover rounded-lg" />
           </div>
           <span className="font-bold text-xl text-primary">RotaRural</span>
         </Link>
