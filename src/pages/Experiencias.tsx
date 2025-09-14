@@ -19,79 +19,83 @@ const Experiencias = () => {
   const [viewMode, setViewMode] = useState<'grid' | 'map'>('grid');
   const [isFilterOpen, setIsFilterOpen] = useState(false);
 
-  // Dados extraídos diretamente do componente ProprietarioDashboard
-  // Nota: Essa é uma abordagem incomum. O ideal seria exportar os dados para um arquivo separado.
-  const mockProperties = [
+  // Usando os mesmos dados da página Index para consistência
+  const featuredProperties = [
     {
-      id: 1,
-      name: "Fazenda Esperança",
-      location: "Serra da Mantiqueira, SP",
-      status: "ativa",
-      views: 145,
-      bookings: 8,
-      rating: 4.8,
-      experiences: 3
-    },
-    {
-      id: 2,
-      name: "Sítio Águas Claras",
-      location: "Campos do Jordão, SP",
-      status: "pendente",
-      views: 23,
-      bookings: 1,
-      rating: 5.0,
-      experiences: 1
-    }
-  ];
-
-  const mockExperiences = [
-    {
-      id: 1,
-      name: "Degustação de Queijos Artesanais",
-      property: "Fazenda Esperança",
-      price: "R$ 85",
-      status: "ativa",
-      bookings: 5
-    },
-    {
-      id: 2,
-      name: "Trilha e Piquenique",
-      property: "Fazenda Esperança",
-      price: "R$ 120",
-      status: "ativa",
-      bookings: 3
-    }
-  ];
-
-  // Combina as propriedades e experiências em uma única lista
-  const allItems = [
-    // Mapeia as propriedades
-    ...mockProperties.map(prop => ({
-      id: `prop-${prop.id}`,
-      title: prop.name,
-      location: prop.location,
-      price: prop.bookings, // Usando bookings como um valor de exemplo
-      rating: prop.rating,
-      reviews: prop.views, // Usando views como reviews de exemplo
+      id: "1",
+      title: "Café Colonial Sabor do Campo",
+      location: "Faxinal dos Rosas, Chapecó, SC",
+      price: 68,
+      rating: 4.9,
+      reviews: 127,
       image: property1,
-      amenities: ["wifi", "estacionamento"],
-      type: "propriedade" as const,
-      coordinates: [-23.5505, -46.6333] as [number, number] // Coordenadas mockadas
-    })),
-    // Mapeia as experiências
-    ...mockExperiences.map(exp => ({
-      id: `exp-${exp.id}`,
-      title: exp.name,
-      location: mockProperties.find(p => p.name === exp.property)?.location || "",
-      price: parseInt(exp.price.replace("R$ ", "")),
+      amenities: ["wifi", "estacionamento", "cafe"],
+      type: "gastronomia" as const,
+      coordinates: [-27.0954, -52.6166] as [number, number]
+    },
+    {
+      id: "2",
+      title: "Giardino Viel",
+      location: "EMCA, Cordilheira Alta, SC",
+      price: 250,
       rating: 4.8,
-      reviews: exp.bookings,
+      reviews: 89,
       image: experience1,
-      amenities: ["cafe"],
+      amenities: ["wifi", "estacionamento"],
+      type: "gastronomia" as const,
+      coordinates: [-27.1954, -52.7166] as [number, number]
+    },
+    {
+      id: "3",
+      title: "Camping Sítio Pousada",
+      location: "Linha Boa Vista, Chapecó, SC",
+      price: 300,
+      rating: 4.7,
+      reviews: 203,
+      image: property1,
+      amenities: ["wifi", "estacionamento", "cafe"],
       type: "experiencia" as const,
-      coordinates: [-22.4609, -42.6417] as [number, number] // Coordenadas mockadas
-    }))
+      coordinates: [-27.2954, -52.8166] as [number, number]
+    },
+    {
+      id: "4",
+      title: "Recanto dos Pinhais",
+      location: "Linha Colonia Cella, Chapecó, SC",
+      price: 95,
+      rating: 4.9,
+      reviews: 156,
+      image: experience1,
+      amenities: ["wifi", "cafe", "estacionamento"],
+      type: "gastronomia" as const,
+      coordinates: [-27.3954, -52.9166] as [number, number]
+    },
+    {
+      id: "5",
+      title: "Parador Vale das Cachoeiras",
+      location: "EMC-378 - Rodeio do Erval, Chapecó, SC",
+      price: 150,
+      rating: 4.9,
+      reviews: 78,
+      image: property1,
+      amenities: ["cafe", "wifi", "estacionamento"],
+      type: "experiencia" as const,
+      coordinates: [-27.4954, -53.0166] as [number, number]
+    },
+    {
+      id: "6",
+      title: "Vinícola Ársego",
+      location: "Linha Rodeio do Erval EMC - 378 - Mal. Bormann, Chapecó, SC",
+      price: 300,
+      rating: 4.8,
+      reviews: 92,
+      image: experience1,
+      amenities: ["wifi", "estacionamento"],
+      type: "gastronomia" as const,
+      coordinates: [-27.5954, -53.1166] as [number, number]
+    }
   ];
+
+  const allItems = featuredProperties;
 
   return (
     <div className="min-h-screen bg-background">

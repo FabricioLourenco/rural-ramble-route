@@ -45,6 +45,12 @@ const Header = () => {
             Favoritos
           </Button>
           <Button variant="outline" size="sm" asChild>
+            <Link to="/login">
+              <User className="w-4 h-4 mr-2" />
+              Login
+            </Link>
+          </Button>
+          <Button variant="outline" size="sm" asChild>
             <Link to="/proprietario/login">
               <User className="w-4 h-4 mr-2" />
               Área do Proprietário
@@ -80,6 +86,12 @@ const Header = () => {
                 Sobre
               </a>
               <hr className="my-4" />
+              <Button variant="outline" className="justify-start" asChild>
+                <Link to="/login">
+                  <User className="w-4 h-4 mr-2" />
+                  Login
+                </Link>
+              </Button>
               <Button variant="outline" className="justify-start" asChild>
                 <Link to="/proprietario/login">
                   <User className="w-4 h-4 mr-2" />
