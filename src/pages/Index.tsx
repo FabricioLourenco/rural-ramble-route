@@ -4,15 +4,15 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Compass, Mountain, TreePine, Camera, Award, Shield, ChefHat } from "lucide-react";
 
-import property1 from "@/assets/cafeColonial.jpg";
-import property2 from "@/assets/vinicola.jpg";
-import experience1 from "@/assets/camping.jpg";
-import gastronomia1 from "@/assets/recanto.jpg";
-import gastronomia2 from "@/assets/paradouro.jpg";
-import gastronomia3 from "@/assets/vinicola2.jpg";
-import gastronomia4 from "@/assets/carro.jpg";
-import gastronomia5 from "@/assets/cachaca.jpg";
-import gastronomia6 from "@/assets/rancho.jpg";
+import imagem1 from "@/assets/cafeColonial.jpg";
+import imagem2 from "@/assets/vinicola.jpg";
+import imagem3 from "@/assets/camping.jpg";
+import imagem4 from "@/assets/recanto.jpg";
+import imagem5 from "@/assets/paradouro.jpg";
+import imagem6 from "@/assets/vinicola2.jpg";
+import imagem7 from "@/assets/carro.jpg";
+import imagem8 from "@/assets/cachaca.jpg";
+import imagem9 from "@/assets/rancho.jpg";
 
 const Index = () => {
   const featuredProperties = [
@@ -23,7 +23,7 @@ const Index = () => {
       price: 68,
       rating: 4.9,
       reviews: 127,
-      image: property1,
+      image: imagem1,
       amenities: ["wifi", "estacionamento", "cafe"],
       type: "gastronomia" as const
     },
@@ -34,7 +34,7 @@ const Index = () => {
       price: 250,
       rating: 4.8,
       reviews: 89,
-      image: property2,
+      image: imagem2,
       amenities: ["wifi", "estacionamento"],
       type: "gastronomia" as const
     },
@@ -45,7 +45,7 @@ const Index = () => {
       price: 300,
       rating: 4.7,
       reviews: 203,
-      image: experience1,
+      image: imagem3,
       amenities: ["wifi", "estacionamento", "cafe"],
       type: "experiencia" as const
     },
@@ -56,7 +56,7 @@ const Index = () => {
       price: 95,
       rating: 4.9,
       reviews: 156,
-      image: gastronomia1,
+      image: imagem4,
       amenities: ["wifi", "cafe", "estacionamento"],
       type: "gastronomia" as const
     },
@@ -67,7 +67,7 @@ const Index = () => {
       price: 150,
       rating: 4.9,
       reviews: 78,
-      image: gastronomia2,
+      image: imagem5,
       amenities: ["cafe", "wifi", "estacionamento"],
       type: "experiencia" as const
     },
@@ -78,7 +78,7 @@ const Index = () => {
       price: 300,
       rating: 4.8,
       reviews: 92,
-      image: gastronomia3,
+      image: imagem6,
       amenities: ["wifi", "estacionamento"],
       type: "gastronomia" as const
     },
@@ -89,7 +89,7 @@ const Index = () => {
       price: 85,
       rating: 4.7,
       reviews: 134,
-      image: gastronomia4,
+      image: imagem7,
       amenities: ["wifi", "cafe", "estacionamento"],
       type: "experiencia" as const
     },
@@ -100,7 +100,7 @@ const Index = () => {
       price: 85,
       rating: 4.9,
       reviews: 134,
-      image: gastronomia5,
+      image: imagem8,
       amenities: ["wifi", "estacionamento"],
       type: "experiencia" as const
     },
@@ -111,7 +111,7 @@ const Index = () => {
       price: 85,
       rating: 4.8,
       reviews: 134,
-      image: gastronomia6,
+      image: imagem9,
       amenities: ["wifi", "cafe", "estacionamento"],
       type: "experiencia" as const
     }

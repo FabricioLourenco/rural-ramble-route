@@ -6,8 +6,8 @@ const HeroSection = () => {
     <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src={heroImage} 
+        <img
+          src={heroImage}
           alt="Paisagem rural com fazenda e campos verdes"
           className="w-full h-full object-cover"
         />
@@ -24,10 +24,9 @@ const HeroSection = () => {
               <span className="block bg-gradient-to-r from-nature-sage to-earth-beige bg-clip-text text-transparent">
                 Turismo Rural
               </span>
-              Autêntico
             </h1>
             <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto leading-relaxed">
-              Conecte-se com a natureza, viva experiências únicas e desfrute da 
+              Conecte-se com a natureza, viva experiências únicas e desfrute da
               hospitalidade rural em propriedades selecionadas por todo o país.
             </p>
           </div>
