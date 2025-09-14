@@ -14,6 +14,18 @@ import ProprietarioDashboard from "./ProprietarioDashboard";
 import property1 from "@/assets/property-1.jpg";
 import experience1 from "@/assets/experience-1.jpg";
 
+import imagem1 from "@/assets/cafeColonial.jpg";
+import imagem2 from "@/assets/vinicola.jpg";
+import imagem3 from "@/assets/camping.jpg";
+import imagem4 from "@/assets/recanto.jpg";
+import imagem5 from "@/assets/paradouro.jpg";
+import imagem6 from "@/assets/vinicola2.jpg";
+import imagem7 from "@/assets/carro.jpg";
+import imagem8 from "@/assets/cachaca.jpg";
+import imagem9 from "@/assets/rancho.jpg";
+
+
+
 const Experiencias = () => {
   const navigate = useNavigate();
   const [viewMode, setViewMode] = useState<'grid' | 'map'>('grid');
@@ -28,7 +40,7 @@ const Experiencias = () => {
       price: 68,
       rating: 4.9,
       reviews: 127,
-      image: property1,
+      image: imagem1,
       amenities: ["wifi", "estacionamento", "cafe"],
       type: "gastronomia" as const,
       coordinates: [-27.0954, -52.6166] as [number, number]
@@ -40,7 +52,7 @@ const Experiencias = () => {
       price: 250,
       rating: 4.8,
       reviews: 89,
-      image: experience1,
+      image: imagem2,
       amenities: ["wifi", "estacionamento"],
       type: "gastronomia" as const,
       coordinates: [-27.1954, -52.7166] as [number, number]
@@ -52,7 +64,7 @@ const Experiencias = () => {
       price: 300,
       rating: 4.7,
       reviews: 203,
-      image: property1,
+      image: imagem3,
       amenities: ["wifi", "estacionamento", "cafe"],
       type: "experiencia" as const,
       coordinates: [-27.2954, -52.8166] as [number, number]
@@ -64,7 +76,7 @@ const Experiencias = () => {
       price: 95,
       rating: 4.9,
       reviews: 156,
-      image: experience1,
+      image: imagem4,
       amenities: ["wifi", "cafe", "estacionamento"],
       type: "gastronomia" as const,
       coordinates: [-27.3954, -52.9166] as [number, number]
@@ -76,7 +88,7 @@ const Experiencias = () => {
       price: 150,
       rating: 4.9,
       reviews: 78,
-      image: property1,
+      image: imagem5,
       amenities: ["cafe", "wifi", "estacionamento"],
       type: "experiencia" as const,
       coordinates: [-27.4954, -53.0166] as [number, number]
@@ -88,7 +100,7 @@ const Experiencias = () => {
       price: 300,
       rating: 4.8,
       reviews: 92,
-      image: experience1,
+      image: imagem6,
       amenities: ["wifi", "estacionamento"],
       type: "gastronomia" as const,
       coordinates: [-27.5954, -53.1166] as [number, number]
