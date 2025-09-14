@@ -20,40 +20,30 @@ const ProprietarioDashboard = () => {
   const mockProperties = [
     {
       id: 1,
-      name: "Fazenda Esperança",
-      location: "Serra da Mantiqueira, SP",
+      name: "Café Colonial Sabor Do Campo",
+      location: "Chapecó, SC",
       status: "ativa",
       views: 145,
       bookings: 8,
       rating: 4.8,
       experiences: 3
     },
-    {
-      id: 2,
-      name: "Sítio Águas Claras",
-      location: "Campos do Jordão, SP", 
-      status: "pendente",
-      views: 23,
-      bookings: 1,
-      rating: 5.0,
-      experiences: 1
-    }
   ];
 
   const mockExperiences = [
     {
       id: 1,
-      name: "Degustação de Queijos Artesanais",
-      property: "Fazenda Esperança",
-      price: "R$ 85",
+      name: "Café Colonial",
+      property: "Café Colonial Sabor Do Campo",
+      price: "R$ 68",
       status: "ativa",
       bookings: 5
     },
     {
       id: 2,
-      name: "Trilha e Piquenique",
-      property: "Fazenda Esperança", 
-      price: "R$ 120",
+      name: "Jantar Italiano",
+      property: "Café Colonial Sabor Do Campo", 
+      price: "R$ 80",
       status: "ativa",
       bookings: 3
     }
@@ -105,7 +95,7 @@ const ProprietarioDashboard = () => {
               <Star className="h-4 w-4 text-muted-foreground" />
             </CardHeader>
             <CardContent>
-              <div className="text-2xl font-bold">4</div>
+              <div className="text-2xl font-bold">2</div>
             </CardContent>
           </Card>
           
